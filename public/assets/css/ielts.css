@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --primary-color: #B0C4DE;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+ 
+   
+}
+
+ul {
+  list-style-type: none;
+ 
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+ 
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 110px; 
+}
+
+.navbar ul {
+  display: flex;  
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 2px; 
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid; 
+}
+
+.navbar .flex {
+  justify-content: space-between;
+  overflow:hidden;
+   margin-left: 150px;  
+}
+
+
+/* Features */
+.features-head img,
+.docs-head img {
+  width: 200px;
+  justify-self: flex-end;
+    margin-left: 400px;
+}
+
+
+
+.features-sub-head img {
+  width: -800px;
+  justify-self: flex-end;
+  center:0;
+  margin-left: 400px;
+  overflow:hidden;
+}
+
+.features-sub-head p {
+  width: 800px;
+  justify-self: flex-end;
+  center:0;
+  margin-left: 200px;
+  overflow:hidden;
+}
+.features-sub-head a {
+  width: 150px;
+  justify-self: flex-end;
+  
+  margin-left: -160px;
+  margin-top: 100px;
+}
+
+
+.features-main video
+{
+	margin-left: 260px;
+}
+
+.features-main .card > i {
+  margin-right: 20px;
+}
+
+.features-main .grid {
+  padding: 30px;
+}
+
+.features-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+}
+
+.features-main .grid > *:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+  }
+
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img {
+    justify-self: center;
+  }
+
+  .features-main .grid > *:first-child,
+  .features-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .showcase-form {
+    width: 300px;
+  }
+}
+
+/*Submit  */
+
+
+.contact {
+    padding: 20px;
+    width: 600px;
+    height: 350px;
+	
+	margin-left: 220px;
+	margin-top:60px
+}
+
+span {
+    color: #A9A9A9;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.inputbox {
+    width: 255px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #A9A9A9;
+    padding: 5px;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #A9A9A9 ;
+    resize: none;
+	
+}
+
+.textname {
+    color: #A9A9A9;
+    pointer-events: none;
+    margin-top: 0px;
+    padding: 0;
+    position: relative;
+    top: -100px;
+    left: 0;
+    transition: 0.25s ease-in-out;
+	overflow: hidden;
+}
+
+.container .contact .inputbox textarea:focus~span,
+.container .contact .inputbox textarea:valid~span {
+    position: relative;
+    top: -130px;
+    font-size: 10px;
+    color: #0000FF;
+}
+
+.submit {
+    background: #808080;
+    color: #ffffff;
+    border-radius: 2px;
+    font-weight: 500;
+	font-size:20px;
+	width: 120px;
+	margin-left: 20px;
+	margin-top:30px;
+	
+	
+}
+
+
+
+

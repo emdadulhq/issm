@@ -1,0 +1,169 @@
+html {
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --primary-color: #B0C4DE;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+ 
+   
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'Philosopher', sans-serif;
+ 
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+ 
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 140px; 
+}
+
+.navbar ul {
+  display: flex;  
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 2px; 
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid; 
+    text-decoration:none;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+  overflow:hidden;
+   margin-left: 150px;  
+}
+
+h2 {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: #222831;
+}
+#skills {
+  padding: 3% 12% 1%;
+  background-color: #f7f7f7;
+}
+
+.skill-box {
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.card-title {
+  color: #155263;
+}
+
+.card-img-top {
+  height: 200px;
+  width: auto;
+}
+
+
+.automation{
+  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  
+  #skills {
+    padding: 3% 8% 1%;
+    background-color: #f7f7f7;
+  }
+  
+ h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+}
+@media (max-width: 992px) {
+
+  #title {
+    padding-bottom: 50px;
+  }
+  #skills {
+    padding: 3% 8% 1%;
+    background-color: #f7f7f7;
+  }
+
+  .web{
+    margin-bottom: 30px;
+  }
+}
+ .card-title a{
+	text-decoration:none;
+}
+
+
+h2:hover {
+  animation: fr 0.7s linear 0.01s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fr {
+  0% {
+    transform: scale(0.9);
+  }
+
+ 

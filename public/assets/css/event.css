@@ -1,0 +1,122 @@
+@import url("http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.clock_sec{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #10101E;
+
+}
+
+.datetime{
+  color: #fff;
+  background: #10101E;
+  font-family: "Segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #2E94E3;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+   margin-left: 30px;
+
+}
+
+.datetime:hover{
+  background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+
+.date{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+
+}
+
+.time{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child{
+  background: #2E94E3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+
+.contact {
+    padding: 20px;
+    width: 600px;
+    height: 350px;
+	color:white;
+	margin-top: -20px;
+	margin-left:70px;
+	font-family: 'Philosopher', sans-serif;
+	font-color:red;
+}
+
+.contact-info {
+    color: #ffffff;
+    margin-top: 200px;
+    margin-left: -620px;
+    border-radius: 2px;
+	font-family: 'Philosopher', sans-serif;
+}
+#clock_contact {
+    background: #ffffff;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-left: -275px;
+}
+
+
+.contact h2 {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: red;
+  margin-left: -270px;
+}
+
+.contact h2:hover {
+  animation: fr 0.7s linear 0.01s 1;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fr {
+  0% {
+    transform: scale(0.9);
+  }
+
+
+
+
+

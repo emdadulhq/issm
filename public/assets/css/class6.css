@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: #222831;
+}
+#skills {
+  padding: 3% 30% 1%;
+  background-color: #f7f7f7;
+}
+
+.skill-box {
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+
+
+.automation{
+  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  
+  #skills {
+    padding: 3% 8% 1%;
+    background-color: #f7f7f7;
+  }
+  
+ h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+}
+@media (max-width: 992px) {
+
+  #title {
+    padding-bottom: 50px;
+  }
+  #skills {
+    padding: 3% 8% 1%;
+    background-color: #f7f7f7;
+  }
+
+  .web{
+    margin-bottom: 30px;
+  }
+  
+}
+
+
+h2:hover {
+  animation: fr 0.7s linear 0.01s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fr {
+  0% {
+    transform: scale(0.9);
+  }
+
+ 
