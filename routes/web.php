@@ -63,6 +63,66 @@ Auth::routes(['verify' => true]);
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/sci','AdminController@sci')->name('sci');
+Route::get('/career','AdminController@career')->name('career');
+Route::get('/mock','AdminController@mock')->name('mock');
+Route::get('/contact','AdminController@contact')->name('contact');
+
+
+Route::group([ 'prefix'=>'Career_Assessment'],function() {
+    Route::get('/ielts', 'AdminController@career_ielts')->name('ielts');
+    Route::get('/support', 'AdminController@career_support')->name('support.');
+    Route::get('/gre', 'AdminController@career_gre')->name('gre.');
+    Route::get('/aptitude', 'AdminController@career_aptitude')->name('aptitude.');
+});
+
+Route::group([ 'prefix'=>'sci'],function() {
+    Route::get('/ict', 'AdminController@ict')->name('ict');
+    Route::get('/kids_coding', 'AdminController@kids_coding')->name('kids_coding.');
+    Route::get('/mobile_lab', 'AdminController@mobile_lab')->name('mobile_lab.');
+    Route::get('/practical', 'AdminController@practical')->name('practical.');
+});
+
+
+Route::group([ 'prefix'=>'mock'],function(){
+    Route::get('/ssc','AdminController@ssc')->name('ssc');
+    Route::get('/ssc/phy','AdminController@ssc_phy')->name('ssc.phy');
+    Route::get('/ssc/math','AdminController@ssc_math')->name('ssc.math');
+    Route::get('/ssc/chem','AdminController@ssc_chem')->name('ssc.chem');
+    Route::get('/ssc/bio','AdminController@ssc_bio')->name('ssc.bio');
+    Route::get('/hsc','AdminController@hsc')->name('hsc');
+    Route::get('/hsc/phy','AdminController@hsc_phy')->name('hsc.phy');
+    Route::get('/hsc/math','AdminController@hsc_math')->name('hsc.math');
+    Route::get('/hsc/chem','AdminController@hsc_chem')->name('hsc.chem');
+    Route::get('/hsc/bio','AdminController@hsc_bio')->name('hsc.bio');
+    Route::get('/admission','AdminController@admission')->name('admission');
+
+    Route::get('/admission/engg','AdminController@adm_engg')->name('adm.engg');
+    Route::get('/engg/phy','AdminController@engg_phy')->name('engg.phy');
+    Route::get('/engg/math','AdminController@engg_math')->name('engg.math');
+    Route::get('/engg/chem','AdminController@engg_chem')->name('engg.chem');
+    Route::get('/engg/bio','AdminController@engg_bio')->name('engg.bio');
+
+    Route::get('/admission/med','AdminController@adm_med')->name('adm.med');
+    Route::get('/med/phy','AdminController@med_phy')->name('med.phy');
+    Route::get('/med/math','AdminController@med_math')->name('med.math');
+    Route::get('/med/chem','AdminController@med_chem')->name('med.chem');
+    Route::get('/med/bio','AdminController@med_bio')->name('med.bio');
+
+    Route::get('/admission/unite','AdminController@adm_unite')->name('adm.med');
+    Route::get('/unite/phy','AdminController@unite_phy')->name('unite.phy');
+    Route::get('/unite/math','AdminController@unite_math')->name('unite.math');
+    Route::get('/unite/chem','AdminController@unite_chem')->name('unite.chem');
+    Route::get('/unite/bio','AdminController@unite_bio')->name('unite.bio');
+
+    Route::get('/admission/enggunite','AdminController@adm_enggunite')->name('adm.enggunite');
+    Route::get('/enggunite/buet','AdminController@enggunite_buet')->name('enggunite.buet');
+    Route::get('/enggunite/kuet','AdminController@enggunite_kuet')->name('enggunite.kuet');
+    Route::get('/enggunite/ruet','AdminController@enggunite_ruet')->name('enggunite.ruet');
+    Route::get('/enggunite/sust','AdminController@enggunite_sust')->name('enggunite.sust');
+
+
+});
 
 
 Route::group([ 'prefix'=>'admin'],function(){
@@ -79,6 +139,7 @@ Route::group([ 'prefix'=>'admin'],function(){
     Route::get('/profile','AdminController@profile')->name('admin.profile');
     Route::get('/permission','AdminController@permission')->name('admin.permission');
     Route::post('/store','AdminController@store')->name('admin.store');
+
 //    Route::get('/show/{id}','AdminController@show')->name('admin.show');
     Route::get('/minquiz','AdminController@minquiz')->name('admin.minquiz');
     Route::get('/startquiz','AdminController@startquiz')->name('admin.startquiz');

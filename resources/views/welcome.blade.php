@@ -82,13 +82,12 @@
         <h1></h1>
 
         <ul>
-            <li><a href="{{ asset('schooling.html') }}">Schooling</a></li>
-            <li><a href="{{ asset('60minutesQuiz/index.html') }}">60minutesQuiz</a></li>
-            <li><a href="{{ asset('sci.html') }}">Sci-M</a></li>
-            <li><a href="{{ asset('carrer_assessment.html') }}">Carrer Assessment</a></li>
-            <li><a href="{{ asset('mock.html') }}">Mock</a></li>
-
-            <li><a href="{{ asset('contact.html') }}">Contact</a></li>
+            <li><a href="{{ url('/') }}">Schooling</a></li>
+            <li><a href="{{ route('register') }}">60minutesQuiz</a></li>
+            <li><a href="{{ route('sci') }}">Sci-M</a></li>
+            <li><a href="{{ route('career') }}">Carrer Assessment</a></li>
+            <li><a href="{{ route('mock') }}">Mock</a></li>
+            <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
     </div>
 

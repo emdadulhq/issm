@@ -17,7 +17,23 @@
     <title>contact us</title>
 	<link rel="icon" href="{{ URL::to('assets/images/home 80 px.png') }}">
 </head>
+<div class="navbar">
+    <div class="container flex">
 
+        <div class="logo">
+            <a href="home.html"><img src="images/home 80 px.png" alt="logo"></a></div>
+        <h1></h1>
+        <ul>
+            <li><a href="{{ url('/') }}">Schooling</a></li>
+            <li><a href="{{ route('register') }}">60minutesQuiz</a></li>
+            <li><a href="{{ route('sci') }}">Sci-M</a></li>
+            <li><a href="{{ route('career') }}">Carrer Assessment</a></li>
+            <li><a href="{{ route('mock') }}">Mock</a></li>
+            <li><a href="{{ route('contact') }}">Contact</a></li>
+        </ul>
+    </div>
+
+</div>
 <body id="cont_sec">
     <div class="container" id="contact_sec">
         <div class="contact-info">

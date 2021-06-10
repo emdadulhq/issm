@@ -162,12 +162,181 @@ class AdminController extends Controller
 
     }
 
-
+    /**
+     * @return Quiz[]|\Illuminate\Database\Eloquent\Collection
+     */
 
     public function run_quiz(){
         return Quiz::all();
     }
 
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function sci(){
+        return view('sci');
+    }
+    public function ict(){
+        return view('sci.ict');
+    }
+    public function kids_coding(){
+        return view('sci.kids_coding');
+    }
+    public function mobile_lab(){
+        return view('sci.mobile_lab');
+    }
+    public function practical(){
+        return view('sci.practical');
+    }
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function mock(){
+        return view('mock');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function ssc(){
+        return view('mock.mock_ssc');
+    }
+    public function ssc_phy(){
+        return view('mock.ssc_phy');
+    }
+    public function ssc_math(){
+        return view('mock.ssc_math');
+    }
+    public function ssc_chem(){
+        return view('mock.ssc_chem');
+    }
+    public function ssc_bio(){
+        return view('mock.ssc_bio');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function hsc(){
+        return view('mock.mock_hsc');
+    }
+    public function hsc_phy(){
+        return view('mock.hsc_phy');
+    }
+    public function hsc_math(){
+        return view('mock.hsc_math');
+    }
+    public function hsc_chem(){
+        return view('mock.hsc_chem');
+    }
+    public function hsc_bio(){
+        return view('mock.hsc_bio');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function admission(){
+        return view('mock.mock_admission');
+    }
+    public function adm_engg(){
+        return view('mock.engineering.engineering');
+    }
+    public function engg_phy(){
+        return view('mock.engineering.engg_phy');
+    }
+    public function engg_math(){
+        return view('mock.engineering.engg_math');
+    }
+    public function engg_chem(){
+        return view('mock.engineering.engg_chem');
+    }
+    public function engg_bio(){
+        return view('mock.engineering.engg_bio');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function adm_med(){
+        return view('mock.medical.medical');
+    }
+    public function med_phy(){
+        return view('mock.medical.med_phy');
+    }
+    public function med_math(){
+        return view('mock.medical.med_math');
+    }
+    public function med_chem(){
+        return view('mock.medical.med_chem');
+    }
+    public function med_bio(){
+        return view('mock.medical.med_bio');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function adm_unite(){
+        return view('mock.university_A.uni_A');
+    }
+    public function unite_phy(){
+        return view('mock.university_A.uniA_phy');
+    }
+    public function unite_math(){
+        return view('mock.university_A.uniA_math');
+    }
+    public function unite_chem(){
+        return view('mock.university_A.uniA_chem');
+    }
+    public function unite_bio(){
+        return view('mock.university_A.uniA_bio');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function adm_enggunite(){
+        return view('mock.enginnering_uni.engg_uni');
+    }
+    public function enggunite_buet(){
+        return view('mock.enginnering_uni.engg_buet');
+    }
+    public function enggunite_kuet(){
+        return view('mock.enginnering_uni.engg_kuet');
+    }
+    public function enggunite_ruet(){
+        return view('mock.enginnering_uni.engg_ruet');
+    }
+    public function enggunite_sust(){
+        return view('mock.enginnering_uni.engg_sust');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function career(){
+        return view('carrer_assessment');
+    }
+    public function career_ielts(){
+        return view('Career_Assessment.ielts');
+    }
+    public function career_gre(){
+        return view('Career_Assessment.gre');
+    }
+    public function career_support(){
+        return view('Career_Assessment.support');
+    }
+    public function career_aptitude(){
+        return view('Career_Assessment.aptitude');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function contact(){
+        return view('contact');
+    }
     /**
      * Store a newly created resource in storage.
      *

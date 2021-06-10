@@ -110,7 +110,7 @@
 			</div>
 
 			<div class="questionBox">
-				What does HTML stand for?
+
 			</div>
 
 			<div class="optionBox">
@@ -146,6 +146,7 @@
 			</div>
 			<div class="buttonBox">
 				<a href="{{ route('admin.minquiz') }}">Start Again</a>
+				<a href="{{ url('/') }}">Exit</a>
 			</div>
 		</div>
 
